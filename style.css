@@ -1,0 +1,49 @@
+.header {
+    padding: 10px;
+}
+
+.header a {
+    color: #aaa; text-transform: uppercase;
+}
+/* hexadecimal use 0 -9 , a-f chracacter */
+.header a:hover{color: orange;}
+
+.footer{
+    background-color: black;
+        color: beige;
+}
+.footer h2{
+    font-size: 30px ;
+}
+.footer a{
+    color: white !important;
+    font-size: 20px;
+    padding-left: 0;
+}
+.footer a:hover{
+    color: aqua !important;
+}
+
+
+/* media devices or media query */
+@media screen and (max-width:575px){
+    .row figure{
+        width: 100%;
+        text-align: center;
+    }
+.logo{
+    border: solid;
+    width: 40%;
+    text-align: center;
+    padding-top: 0,srem;
+    padding-bottom : 0,srem;
+}
+}
+/* media query for mobile landscape mode */
+@media screen and (min-width:576px) and (max-width:767px){
+    body{
+        border: solid red;
+        width: 100%;
+    }
+    }
+    

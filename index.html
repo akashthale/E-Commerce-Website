@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- viewport will will detect devices and device width also adjust body tag -->
+    <title>eshopper website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header start  (header is new symantics in html)-->
+    <header class="container header">
+        <!-- line mo 13 we use header as a custom class -->
+        <div class="row">
+            <figure class="col-3">
+                <img class="logo"  src="./home/logo.png" alt="">
+            </figure>
+            <div class="col-9">
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+
+    <!-- menu start -->
+
+    <nav class=" container navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search"> -->
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--  menu end -->
+
+    <!-- slider start -->
+    <div class="container slider pt-5 pb-5 ">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://sslimages.shoppersstop.com/sys-master/root/hb5/hf4/29829794693150/indianwear_Top-Banner-Web_190423_main%20carousel_hp.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://sslimages.shoppersstop.com/sys-master/root/h3f/h18/29843202605086/nebula_Top-Banner-Web--main-hp-2023-04-20-new.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://sslimages.shoppersstop.com/sys-master/root/h72/hfb/29829794889758/menswear_Top-Banner-Web_190423_main%20carousel_hp.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- slider end -->
+
+
+    <!-- content start  -->
+    <div class="container content pt-2 pb-2">
+        <div class="row">
+            <div class="col-3">
+                <h2 class="text-center text-uppercase" style="font-family: Arial, Helvetica, sans-serif;">Catageroies
+                </h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                your first choice
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><input type="checkbox"
+                                            name="" id=""> T-Shirt</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><input type="checkbox"> Sweater</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" input type="checkbox"><input type="checkbox" name=""
+                                            id=""> Jeans</a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Limitied period offer
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                upcomming deals !
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <h2 class="text-center text-uppercase">
+                    upcomming product
+                </h2>
+                <div class="row">
+                    <figure class="col-3 text-center">
+                        <img class="img-fluid" src="./home/product1.jpg" alt="img-fluid">
+                        <h2> &#8377 2000/-</h2>
+                        <p>product name</p>
+                        <p>
+                            <button type="button" class="btn btn-warning" >add to cart</button>
+                        </p>
+                    </figure>
+                    <figure class="col-3 text-center">
+                        <img  class="img-fluid" src="./home/product2.jpg" alt="img-fluid">
+                        <h2> &#8377 1500/-</h2>
+                        <p>product name</p>
+                        <p>
+                            <button type="button" class="btn btn-warning">add to cart</button>
+                        </p>
+                    </figure>
+                    <figure class="col-3 text-center">
+                        <img  class="img-fluid" src="./home/product3.jpg" alt="img-fluid">
+                        <h2> &#8377 2000/-</h2>
+                        <p>product name</p>
+                        <p>
+                            <button type="button" class="btn btn-warning">add to cart</button>
+                        </p>
+                    </figure>
+                    <figure class="col-3 text-center">
+                        <img class="img-fluid" src="./home/product4.jpg" alt="img-fluid">
+                        <h2> &#8377 1999/-</h2>
+                        <p>
+                            <button type="button" class="btn btn-warning">add to cart</button>
+                            <p>product name</p>
+                        </p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content end -->
+
+    <!-- footer start -->
+
+    <footer class=" pt-5 pb-5 footer">
+        <!-- here we didn't use container class because we want full screen display -->
+        <div class="container border text-center">
+            <div class="row">
+                <div class="col-2">
+                    <h4 class="text-uppercase">MENS</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">T-shirt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lowers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Snekers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Footwear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trousers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shorts</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h4 class="text-uppercase">WOMENS</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Saree</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">jeans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Footwear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plazoo</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h4 class="text-uppercase">KIDS</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">T-shirt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lowers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Snekers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Footwear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trousers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shorts</a>
+                        </li>
+                </div>
+
+                <div class="col-2">
+                    <h4 class="text-uppercase">Bike Acess </h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">cleaning kit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Engine oil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Silencer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">bike cover</a>
+                        </li>
+                </div>
+
+                <div class="col-2">
+                    <h4 class="text-uppercase">CAR ACESS</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Mobile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Washing kit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Headlights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Spare parts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">seat cover</a>
+                        </li>
+                </div>
+
+                <div class="col-2">
+                    <h4 class="text-uppercase">DOG </h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">belts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">dog food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">dog spray</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">dog medicine</a>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- the above link is for java script to access the navigaton bar -->
+
+</body>
+
+</html>
